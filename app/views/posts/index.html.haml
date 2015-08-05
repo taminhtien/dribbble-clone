@@ -1,0 +1,8 @@
+%h1 All Posts
+
+= @posts.each do |post| 
+	.posts
+		%h1= link_to post.title, post
+		%p= post.link
+		%p= post.description
+		= link_to "Show more", post
